@@ -1,13 +1,13 @@
-import person from "./person";
+import Person from "./person";
 
-const list = ({ people }) => {
+const List = ({ people }) => {
   return (
     <section>
       {people.map((person) => {
-        return <person key={person.id} {...person} />;
+        return <Person key={person.id} {...person} />;
       })}
     </section>
   );
 };
 
-export default list;
+export default List;
