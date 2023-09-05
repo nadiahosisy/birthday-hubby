@@ -1,6 +1,6 @@
 import { useState } from "react";
-import data from "./data";
 import List from "./list";
+import data from "./data";
 
 const App = () => {
   const [people, setpeople] = useState(data);
