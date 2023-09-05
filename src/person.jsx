@@ -1,7 +1,11 @@
 import React from "react";
 
-const Person = () => {
-  return <div>person</div>;
+const Person = ({ image, name, age }) => {
+  return (
+    <article className="person">
+      <img src={image} alt={name} className="img" />
+    </article>
+  );
 };
 
 export default Person;
